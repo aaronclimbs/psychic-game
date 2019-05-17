@@ -22,7 +22,9 @@
     <div class="container">
       <h1 class="text-center mb-3">The Psychic Game</h1>
       <div class="jumbotron">
-        <h3 class="text-center" id="jumboText"></h3>
+        <p class="text-center lead" id="jumboText">
+          Click in the text box to begin.
+        </p>
       </div>
       <form class="form-inline" id="form">
         <div class="form-group mx-auto mb-2">
@@ -35,11 +37,14 @@
           />
         </div>
       </form>
-      <div id="stats">
-        <p>Wins: <span id="wins"></span></p>
-        <p>Losses: <span id="losses"></span></p>
-        <p>Guesses Left: <span id="guessesLeft"></span></p>
-        <p>Your Guesses so far: <span id="guessesUsed"></span></p>
+      <div>
+        <h4 class="display-6 my-4">High Score: <span id="highScore"></span></h4>
+        <div id="stats">
+          <p>Wins: <span id="wins"></span></p>
+          <p>Losses: <span id="losses"></span></p>
+          <p>Guesses Left: <span id="guessesLeft"></span></p>
+          <p>Your Guesses so far: <span id="guessesUsed"></span></p>
+        </div>
       </div>
       <div id="newGameDiv"></div>
     </div>

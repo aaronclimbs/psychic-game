@@ -3,6 +3,7 @@ let wins = 0;
 let losses = 0;
 let guessesLeft = 10;
 let guessesUsed = 0;
+let highScore = 0;
 let guess;
 
 // grab IDs
@@ -12,6 +13,7 @@ let guessLeftText = document.querySelector("#guessesLeft");
 let guessUsedText = document.querySelector("#guessesUsed");
 let jumboText = document.querySelector("#jumboText");
 let newGameDiv = document.querySelector("#newGameDiv");
+let highScoreText = document.querySelector("#highScore");
 
 // set event listeners
 let ltrInput = document
@@ -124,7 +126,11 @@ function game() {
     if (guess.toLowerCase() === targetLetter) {
       // update counts and jumbotron text
       wins++;
+      if (highScore < wins) {
+        highScore = wins;
+      }
       winText.textContent = wins;
+      highScoreText.textContent = highScore;
       jumboText.textContent = "You won!";
     } else {
       // if loss, update counts and jumbotron text
