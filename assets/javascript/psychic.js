@@ -85,9 +85,7 @@ function createButton() {
   newButton.id = "newGame";
   newButton.appendChild(document.createTextNode("New Game"));
   newGameDiv.append(newButton);
-  let newGameBtn = document
-    .querySelector("#newGame")
-    .addEventListener("click", newGame);
+  document.querySelector("#newGame").addEventListener("click", newGame);
 }
 
 function newGame(e) {
