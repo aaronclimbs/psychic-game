@@ -117,7 +117,7 @@ function getKey(e) {
 // Game code
 function game() {
   // Check if have guesses left
-  if (guessesLeft > 1) {
+  if (guessesLeft > 0) {
     // Assign random letter
     targetLetter = letters[Math.floor(Math.random() * 26)];
     // check if win
