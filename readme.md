@@ -2,6 +2,12 @@
 
 Basic bootstrap layout with 'psychic' guessing game in Javascript. The game listens for key events and checks them against a randomly selected computer letter. High score persists across games.
 
+## Technologies
+
+- Javascript
+- HTML5
+- CSS
+
 ## Authors
 
 - **Aaron Keisler**
